@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelly's Dessert World</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>    
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fdf8f4;
+      color: #3e2c24;
+    }
+
+    header {
+      background-color: #a24c3e;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 40px;
+    }
+
+    .item {
+      background-color: #fff8f0;
+      border: 1px solid #d8bfa4;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .full-image {
+      text-align: center;
+    }
+
+    .full-image img {
+      width: 40%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .item h2 {
+      color: #84392f;
+      margin-top: 10px;
+    }
+
+    .description {
+      margin: 20px 0;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 20px;
+      /*flex-wrap: wrap;*/
+    }
+
+    .gallery img {
+      /*width: calc(33.333% - 13.33px);*/
+      width:30vw;
+      border-radius: 8px;
+    }
+
+    .item ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .item li {
+      margin: 10px 0;
+      padding-left: 30px;
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      background-position: left center;
+    }
+
+    .cake1 { background-image: url('cake1.png'); }
+    .cake2 { background-image: url('cake2.png'); }
+    .cake3 { background-image: url('cake3.png'); }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #a24c3e;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>✿*~✿~*Welcome to Kelly's dessert world*~✿~*✿</h1>
+    <p>A fee may be charged for wasted cake.</p>
+  </header>
+
+  <main class="container">
+    <!-- 第一張獨立圖片 -->
+    <div class="full-image">
+      <img src="1.jpg" alt="Project 1 Main Image" />
+    </div>
+
+    <!-- 第一個作品 -->
+    <div class="item">
+      <div class="description">
+        <h2>✿Book of Knowledge</h2>
+        <ul>
+          <li class="cake1">FLOWER OBSERVATION</li>
+          <li class="cake2">Observe the plants and flowers in our campus, learn which are edible and which are not, and explore related information about them.</li>
+        </ul>
+      </div>
+      <div class="gallery">
+        <a data-fancybox="gallery" data-src="bok1.jpg">  
+            <img src="bok1.jpg" alt="Detail 1">
+        </a>
+        <a data-fancybox="gallery" data-src="bok2.jpg">  
+            <img src="bok2.jpg" alt="Detail 2">
+        </a>
+        <a data-fancybox="gallery" data-src="bok3.jpg">
+            <img src="bok3.jpg" alt="Detail 3">
+        </a>
+      </div>
+    </div>
+
+    <!-- 第二個作品 -->
+    <div class="item">
+      <div class="full-image">
+      </div>
+      <div class="description">
+        <h2>✿Book of Knowledge</h2>
+        <ul>
+          <li class="cake2">FASHION DESIGN OF THE HUNGER GAME</li>
+          <li class="cake1">Design Katniss's costumes for different occasions by reading the novel <em>The Hunger Games.<em></li>
+        </ul>
+      </div>
+      <div class="gallery">
+        <a data-fancybox="gallery" data-src="kat1.jpg">  
+            <img src="kat1.jpg" alt="Detail 1">
+        </a>
+        <a data-fancybox="gallery" data-src="kat2.jpg">  
+            <img src="kat2.jpg" alt="Detail 2">
+        </a>
+        <a data-fancybox="gallery" data-src="kat3.jpg">
+            <img src="kat3.jpg" alt="Detail 3">
+        </a>
+      </div>
+    </div>
+
+    <!-- 第三個作品 -->
+    <div class="item">
+  <div class="description">
+    <h2 style="font-style: normal;">✿Dialectical Journal</h2>
+    <ul style="letter-spacing: 0.5px; line-height: 1.8;">
+      <li class="cake1" style="font-style: normal;"><strong>The first voice:</strong></li>
+      <li class="cake1" style="font-style: normal;"><em>“What about their brains? Have they been given any of the real tributes' memories? Have they been programmed to hate our faces particularly because we have survived and they were so callously murdered? And the ones we actually killed… do they believe they’re avenging their own deaths?”</em></li>
+      <li class="cake3" style="font-style: normal;"><strong>The second voice:</strong></li>
+      <li class="cake3" style="font-style: normal;">
+        In my opinion, the reason the game organizer turned the dead tributes into muttations that attacked Peeta and Katniss was to use these creatures as his eyes to monitor and control the situation. These tributes became useful tools for the organizer. By releasing the mutts, the game became more intense and interesting, creating a climax that entertained both the audience and the organizer. Watching the tributes kill each other in different ways added variety and prevented the game from becoming boring.
+        <br><br>
+        However, I think this method is too cruel. The organizer not only controlled the tributes’ actions but also manipulated their minds in some way, turning them into his slaves without their consent. Additionally, the author uses the concept of "mutts" to represent slavery. These former tributes were denied their human rights and freedom, treated like animals in bondage for the amusement of those watching the game.
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Kelly. 
+    <br>
+    Photos of desserts are from Pinterest.
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    Fancybox.bind('[data-fancybox="gallery"]', {});    
+  </script>  
+</body>
+</html>
